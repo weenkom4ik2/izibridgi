@@ -1,0 +1,265 @@
+-- Weenkom4ik UTILS
+-- ESCAPE TSUNAMI FOR BRAINROTS
+-- Version: 3.2
+
+-- Instances:
+
+local MAIN_9123293 = Instance.new("ScreenGui")
+local Frame = Instance.new("Frame")
+local UICorner = Instance.new("UICorner")
+local title = Instance.new("TextLabel")
+local subtitle = Instance.new("TextLabel")
+local ScrollingFrame = Instance.new("ScrollingFrame")
+local ShowTimerCelestial = Instance.new("TextButton")
+local highlight = Instance.new("TextButton")
+local UIListLayout = Instance.new("UIListLayout")
+local highlightplr = Instance.new("TextButton")
+local bat = Instance.new("TextButton")
+local sell = Instance.new("TextButton")
+local speed = Instance.new("TextButton")
+local bring = Instance.new("TextButton")
+local UIColor = Instance.new("TextButton")
+local Open = Instance.new("TextButton")
+local UICorner_2 = Instance.new("UICorner")
+local UIGradient = Instance.new("UIGradient")
+
+--Properties:
+
+MAIN_9123293.Name = "MAIN_9123293"
+MAIN_9123293.Parent = game.Players.LocalPlayer:WaitForChild("PlayerGui")
+MAIN_9123293.ZIndexBehavior = Enum.ZIndexBehavior.Sibling
+
+Frame.Parent = MAIN_9123293
+Frame.BackgroundColor3 = Color3.fromRGB(255, 229, 229)
+Frame.BorderColor3 = Color3.fromRGB(0, 0, 0)
+Frame.BorderSizePixel = 0
+Frame.Size = UDim2.new(0.130054936, 0, 1, 0)
+
+UICorner.Parent = Frame
+
+title.Name = "title"
+title.Parent = Frame
+title.BackgroundColor3 = Color3.fromRGB(255, 255, 255)
+title.BackgroundTransparency = 1.000
+title.BorderColor3 = Color3.fromRGB(0, 0, 0)
+title.BorderSizePixel = 0
+title.Size = UDim2.new(0.992271841, 0, 0.0849557519, 0)
+title.Font = Enum.Font.FredokaOne
+title.Text = "Weenkom4ik's Util"
+title.TextColor3 = Color3.fromRGB(255, 255, 255)
+title.TextScaled = true
+title.TextSize = 14.000
+title.TextStrokeTransparency = 0.000
+title.TextWrapped = true
+
+subtitle.Name = "subtitle"
+subtitle.Parent = Frame
+subtitle.BackgroundColor3 = Color3.fromRGB(255, 255, 255)
+subtitle.BackgroundTransparency = 1.000
+subtitle.BorderColor3 = Color3.fromRGB(0, 0, 0)
+subtitle.BorderSizePixel = 0
+subtitle.Position = UDim2.new(0, 0, 0.084955737, 0)
+subtitle.Size = UDim2.new(0.96367842, 0, 0.0441888236, 0)
+subtitle.Font = Enum.Font.FredokaOne
+subtitle.Text = "Escape Tsuname for a Brainrots"
+subtitle.TextColor3 = Color3.fromRGB(255, 255, 255)
+subtitle.TextScaled = true
+subtitle.TextSize = 14.000
+subtitle.TextStrokeTransparency = 0.000
+subtitle.TextWrapped = true
+
+ScrollingFrame.Parent = Frame
+ScrollingFrame.Active = true
+ScrollingFrame.BackgroundColor3 = Color3.fromRGB(255, 255, 255)
+ScrollingFrame.BackgroundTransparency = 1.000
+ScrollingFrame.BorderColor3 = Color3.fromRGB(0, 0, 0)
+ScrollingFrame.BorderSizePixel = 0
+ScrollingFrame.Position = UDim2.new(0, 0, 0.143362835, 0)
+ScrollingFrame.Size = UDim2.new(0.967289746, 0, 0.85663718, 0)
+
+ShowTimerCelestial.Name = "ShowTimerCelestial"
+ShowTimerCelestial.Parent = ScrollingFrame
+ShowTimerCelestial.BackgroundColor3 = Color3.fromRGB(255, 255, 255)
+ShowTimerCelestial.BorderColor3 = Color3.fromRGB(0, 0, 0)
+ShowTimerCelestial.BorderSizePixel = 0
+ShowTimerCelestial.Size = UDim2.new(0.957943916, 0, 0.0991735533, 0)
+ShowTimerCelestial.Font = Enum.Font.FredokaOne
+ShowTimerCelestial.Text = "Show / Hide Celestial Timer"
+ShowTimerCelestial.TextColor3 = Color3.fromRGB(0, 0, 0)
+ShowTimerCelestial.TextScaled = true
+ShowTimerCelestial.TextSize = 14.000
+ShowTimerCelestial.TextWrapped = true
+
+highlight.Name = "highlight"
+highlight.Parent = ScrollingFrame
+highlight.BackgroundColor3 = Color3.fromRGB(255, 255, 255)
+highlight.BorderColor3 = Color3.fromRGB(0, 0, 0)
+highlight.BorderSizePixel = 0
+highlight.Size = UDim2.new(0.957943916, 0, 0.0991735533, 0)
+highlight.Font = Enum.Font.FredokaOne
+highlight.Text = "ESP all brainrots"
+highlight.TextColor3 = Color3.fromRGB(0, 0, 0)
+highlight.TextScaled = true
+highlight.TextSize = 14.000
+highlight.TextWrapped = true
+
+UIListLayout.Parent = ScrollingFrame
+UIListLayout.SortOrder = Enum.SortOrder.LayoutOrder
+
+highlightplr.Name = "highlightplr"
+highlightplr.Parent = ScrollingFrame
+highlightplr.BackgroundColor3 = Color3.fromRGB(255, 255, 255)
+highlightplr.BorderColor3 = Color3.fromRGB(0, 0, 0)
+highlightplr.BorderSizePixel = 0
+highlightplr.Size = UDim2.new(0.957943916, 0, 0.0991735533, 0)
+highlightplr.Font = Enum.Font.FredokaOne
+highlightplr.Text = "ESP all Players"
+highlightplr.TextColor3 = Color3.fromRGB(0, 0, 0)
+highlightplr.TextScaled = true
+highlightplr.TextSize = 14.000
+highlightplr.TextWrapped = true
+
+bat.Name = "bat"
+bat.Parent = ScrollingFrame
+bat.BackgroundColor3 = Color3.fromRGB(255, 255, 255)
+bat.BorderColor3 = Color3.fromRGB(0, 0, 0)
+bat.BorderSizePixel = 0
+bat.Size = UDim2.new(0.957943916, 0, 0.0991735533, 0)
+bat.Font = Enum.Font.FredokaOne
+bat.Text = "(FUN) Make a bat hitbox bigger"
+bat.TextColor3 = Color3.fromRGB(0, 0, 0)
+bat.TextScaled = true
+bat.TextSize = 14.000
+bat.TextWrapped = true
+
+sell.Name = "sell"
+sell.Parent = ScrollingFrame
+sell.BackgroundColor3 = Color3.fromRGB(255, 255, 255)
+sell.BorderColor3 = Color3.fromRGB(0, 0, 0)
+sell.BorderSizePixel = 0
+sell.Size = UDim2.new(0.957943916, 0, 0.0991735533, 0)
+sell.Font = Enum.Font.FredokaOne
+sell.Text = "Teleport to a Seller"
+sell.TextColor3 = Color3.fromRGB(0, 0, 0)
+sell.TextScaled = true
+sell.TextSize = 14.000
+sell.TextWrapped = true
+
+speed.Name = "speed"
+speed.Parent = ScrollingFrame
+speed.BackgroundColor3 = Color3.fromRGB(255, 255, 255)
+speed.BorderColor3 = Color3.fromRGB(0, 0, 0)
+speed.BorderSizePixel = 0
+speed.Size = UDim2.new(0.957943916, 0, 0.0991735533, 0)
+speed.Font = Enum.Font.FredokaOne
+speed.Text = "Teleport to a Speed Shop"
+speed.TextColor3 = Color3.fromRGB(0, 0, 0)
+speed.TextScaled = true
+speed.TextSize = 14.000
+speed.TextWrapped = true
+
+bring.Name = "bring"
+bring.Parent = ScrollingFrame
+bring.BackgroundColor3 = Color3.fromRGB(255, 255, 255)
+bring.BorderColor3 = Color3.fromRGB(0, 0, 0)
+bring.BorderSizePixel = 0
+bring.Size = UDim2.new(0.957943916, 0, 0.0991735533, 0)
+bring.Font = Enum.Font.FredokaOne
+bring.Text = "(FUN) Bring all Brainrots (CANT BE GETTED)"
+bring.TextColor3 = Color3.fromRGB(0, 0, 0)
+bring.TextScaled = true
+bring.TextSize = 14.000
+bring.TextWrapped = true
+
+UIColor.Name = "UIColor"
+UIColor.Parent = ScrollingFrame
+UIColor.BackgroundColor3 = Color3.fromRGB(255, 255, 255)
+UIColor.BorderColor3 = Color3.fromRGB(0, 0, 0)
+UIColor.BorderSizePixel = 0
+UIColor.Size = UDim2.new(0.957943916, 0, 0.0991735533, 0)
+UIColor.Font = Enum.Font.FredokaOne
+UIColor.Text = "(UI) CHANGE BACKGROUND COLOR"
+UIColor.TextColor3 = Color3.fromRGB(0, 0, 0)
+UIColor.TextScaled = true
+UIColor.TextSize = 14.000
+UIColor.TextWrapped = true
+
+Open.Name = "Open"
+Open.Parent = MAIN_9123293
+Open.BackgroundColor3 = Color3.fromRGB(255, 255, 255)
+Open.BorderColor3 = Color3.fromRGB(0, 0, 0)
+Open.BorderSizePixel = 0
+Open.Position = UDim2.new(0.936095834, 0, 0.535966992, 0)
+Open.Size = UDim2.new(0, 85, 0, 18)
+Open.Font = Enum.Font.Unknown
+Open.Text = "Weenkom4ik Util"
+Open.TextColor3 = Color3.fromRGB(0, 0, 0)
+Open.TextScaled = true
+Open.TextSize = 14.000
+Open.TextWrapped = true
+
+UICorner_2.Parent = Open
+
+UIGradient.Color = ColorSequence.new{ColorSequenceKeypoint.new(0.00, Color3.fromRGB(255, 202, 202)), ColorSequenceKeypoint.new(1.00, Color3.fromRGB(255, 126, 126))}
+UIGradient.Parent = Open
+
+if game.PlaceId ~= 131623223084840 then
+	game.Players.LocalPlayer:Kick("JOIN ORIGINAL GAME BRO")
+end
+local plr = game.Players.LocalPlayer
+ShowTimerCelestial.Activated:Connect(function()
+	plr.PlayerGui:FindFirstChild("CelestialTimeLeft").Enabled = not plr.PlayerGui:FindFirstChild("CelestialTimeLeft").Enabled
+end)
+highlight.Activated:Connect(function()
+	highlight.Text = "ESP all important brainrots (PRESS TO REFRESH)"
+	for i, brainrotFold in pairs(workspace.ActiveBrainrots:GetChildren()) do
+		for i, item in pairs(brainrotFold:GetChildren()) do
+			if item:IsA("Model") then
+				local highlightnew = Instance.new("Highlight")
+				highlightnew.Name = "RENDEREDHIGHLIGHT"
+				highlightnew.Parent = item
+				if brainrotFold.Name == "Celestial" then
+					highlightnew.OutlineColor = Color3.new(1, 0.270588, 0.964706)
+				elseif brainrotFold.Name == "Cosmic" then
+					highlightnew.OutlineColor = Color3.new(0.372549, 0.329412, 0.517647)
+				elseif brainrotFold.Name == "Divine" then
+					highlightnew.OutlineColor = Color3.new(1, 0.878431, 0.2)
+				elseif brainrotFold.Name == "Mythical" then
+					highlightnew.OutlineColor = Color3.new(1, 0, 0)
+				end
+			end
+		end
+	end
+end)
+highlightplr.Activated:Connect(function()
+	highlight.Text = "ESP all Players (PRESS TO REFRESH)"
+	for i, plrnew in pairs(game.Players:GetPlayers()) do
+		local highlightnew = Instance.new("Highlight")
+		highlightnew.Name = "RENDEREDHIGHLIGHT"
+		highlightnew.Parent = plrnew.Character
+		highlightnew.OutlineColor = Color3.new(1, 1, 1)
+	end
+end)
+sell.Activated:Connect(function()
+	game.Players.LocalPlayer.Character.HumanoidRootPart.CFrame = CFrame.new(121.569267, 3.00000095, -100.499748, 1, 0, 0, 0, 1, 0, 0, 0, 1)
+end)
+speed.Activated:Connect(function()
+	game.Players.LocalPlayer.Character.HumanoidRootPart.CFrame = CFrame.new(141, 1, 0, 0, -1, 0, 1, 0, -0, 0, 0, 1)
+end)
+bring.Activated:Connect(function()
+	for i, brainrotFold in pairs(workspace.ActiveBrainrots:GetChildren()) do
+		for i, item in pairs(brainrotFold:GetChildren()) do
+			if item:IsA("Model") then
+				item.Root.CFrame = game.Players.LocalPlayer.Character.HumanoidRootPart.CFrame
+			end
+		end
+	end
+end)
+bat.Activated:Connect(function()
+	if plr.Character.Backpack:FindFirstChild("Basic Bat") then
+		plr.Character.Backpack:FindFirstChild("Basic Bat").Hitbox.Size = Vector3.new(100, 50, 100)
+	end
+end)
+Open.Activated:Connect(function()
+	Frame.Visible = not Frame.Visible
+end)
