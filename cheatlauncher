@@ -123,6 +123,7 @@ Error.Parent = MAIN__88192
 Error.SoundId = "rbxassetid://9066167010"
 
 main.Name = "main"
+main.Volume = 10
 main.Parent = MAIN__88192
 main.SoundId = "rbxassetid://74461673136220"
 main.Looped = true
