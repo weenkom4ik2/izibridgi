@@ -1,0 +1,209 @@
+-- CHEAT LAUNCHER
+--v0.0
+
+-- Instances:
+
+local MAIN__88192 = Instance.new("ScreenGui")
+local viru = Instance.new("ImageLabel")
+local err = Instance.new("Frame")
+local TITLE = Instance.new("TextLabel")
+local ru = Instance.new("TextButton")
+local RUN = Instance.new("TextLabel")
+local notifies = Instance.new("Frame")
+local UIListLayout = Instance.new("UIListLayout")
+local Notify = Instance.new("TextLabel")
+local Error = Instance.new("Sound")
+local main = Instance.new("Sound")
+
+--Properties:
+
+MAIN__88192.Name = "MAIN__88192"
+MAIN__88192.Parent = game.Players.LocalPlayer:WaitForChild("PlayerGui")
+MAIN__88192.ZIndexBehavior = Enum.ZIndexBehavior.Sibling
+
+viru.Name = "viru"
+viru.Parent = MAIN__88192
+viru.AnchorPoint = Vector2.new(0.5, 0.5)
+viru.BackgroundColor3 = Color3.fromRGB(255, 0, 0)
+viru.BorderColor3 = Color3.fromRGB(0, 0, 0)
+viru.BorderSizePixel = 0
+viru.Position = UDim2.new(0.109710433, 0, 0.145931616, 0)
+viru.Size = UDim2.new(0.220669046, 0, 0.293042392, 0)
+viru.Visible = false
+viru.ZIndex = 999999999
+viru.Image = "rbxassetid://135413396810531"
+
+err.Name = "err"
+err.Parent = MAIN__88192
+err.AnchorPoint = Vector2.new(0.5, 0.5)
+err.BackgroundColor3 = Color3.fromRGB(0, 0, 0)
+err.BorderColor3 = Color3.fromRGB(255, 0, 0)
+err.BorderSizePixel = 5
+err.Position = UDim2.new(0.5, 0, 0.5, 0)
+err.Size = UDim2.new(0.5, 0, 0.5, 0)
+
+TITLE.Name = "TITLE"
+TITLE.Parent = err
+TITLE.BackgroundColor3 = Color3.fromRGB(255, 255, 255)
+TITLE.BackgroundTransparency = 1.000
+TITLE.BorderColor3 = Color3.fromRGB(0, 0, 0)
+TITLE.BorderSizePixel = 0
+TITLE.Position = UDim2.new(-0.00149802759, 0, -0.00353768189, 0)
+TITLE.Size = UDim2.new(1.00000036, 0, 0.255896211, 0)
+TITLE.Font = Enum.Font.Antique
+TITLE.Text = "CHEAT LAUNCHER"
+TITLE.TextColor3 = Color3.fromRGB(255, 0, 0)
+TITLE.TextScaled = true
+TITLE.TextSize = 14.000
+TITLE.TextWrapped = true
+
+ru.Name = "ru"
+ru.Parent = err
+ru.BackgroundColor3 = Color3.fromRGB(255, 0, 0)
+ru.BorderColor3 = Color3.fromRGB(0, 0, 0)
+ru.BorderSizePixel = 0
+ru.Position = UDim2.new(0.347478807, 0, 0.410377324, 0)
+ru.Size = UDim2.new(0.29181233, 0, 0.241745219, 0)
+ru.Font = Enum.Font.Highway
+ru.Text = "Run"
+ru.TextColor3 = Color3.fromRGB(0, 0, 0)
+ru.TextScaled = true
+ru.TextSize = 14.000
+ru.TextWrapped = true
+
+RUN.Name = "RUN"
+RUN.Parent = err
+RUN.BackgroundColor3 = Color3.fromRGB(255, 255, 255)
+RUN.BackgroundTransparency = 1.000
+RUN.BorderColor3 = Color3.fromRGB(0, 0, 0)
+RUN.BorderSizePixel = 0
+RUN.Position = UDim2.new(-0.00149807322, 0, -0.00353784394, 0)
+RUN.Size = UDim2.new(1.00000048, 0, 1.00353777, 0)
+RUN.Visible = false
+RUN.Font = Enum.Font.Antique
+RUN.Text = "!! YOUR ROBLOX WAS VIRUSED !!"
+RUN.TextColor3 = Color3.fromRGB(255, 0, 0)
+RUN.TextScaled = true
+RUN.TextSize = 14.000
+RUN.TextWrapped = true
+
+notifies.Name = "notifies"
+notifies.Parent = MAIN__88192
+notifies.BackgroundColor3 = Color3.fromRGB(255, 255, 255)
+notifies.BackgroundTransparency = 1.000
+notifies.BorderColor3 = Color3.fromRGB(0, 0, 0)
+notifies.BorderSizePixel = 0
+notifies.LayoutOrder = 999999999
+notifies.Position = UDim2.new(0.702446282, 0, 0.852594376, 0)
+notifies.Size = UDim2.new(0.29705444, 0, 0.146226361, 0)
+notifies.ZIndex = 999999999
+
+UIListLayout.Parent = notifies
+UIListLayout.SortOrder = Enum.SortOrder.LayoutOrder
+UIListLayout.VerticalAlignment = Enum.VerticalAlignment.Bottom
+
+Notify.Name = "Notify"
+Notify.Parent = notifies
+Notify.BackgroundColor3 = Color3.fromRGB(255, 255, 255)
+Notify.BackgroundTransparency = 1.000
+Notify.BorderColor3 = Color3.fromRGB(0, 0, 0)
+Notify.BorderSizePixel = 0
+Notify.Position = UDim2.new(-9.23220739e-07, 0, 0.508064747, 0)
+Notify.Size = UDim2.new(1.00168025, 0, 0.5, 0)
+Notify.Visible = false
+Notify.Font = Enum.Font.Arial
+Notify.Text = "SENDING DEVS OF GAME, ABOUT CHEATER..."
+Notify.TextColor3 = Color3.fromRGB(255, 0, 0)
+Notify.TextScaled = true
+Notify.TextSize = 14.000
+Notify.TextWrapped = true
+
+Error.Name = "error"
+Error.Parent = MAIN__88192
+Error.SoundId = "rbxassetid://9066167010"
+
+main.Name = "main"
+main.Parent = MAIN__88192
+main.SoundId = "rbxassetid://74461673136220"
+main.Looped = true
+
+local function createNotify(text)
+	local notif = Notify:Clone()
+	notif.Parent = notifies
+	notif.Text = text
+	notif.Visible = true
+	game.Debris:AddItem(notif, math.random(3,5))
+end
+local posX = 0
+local posY = 0
+local xPlus = 0.1
+local function createWindow()
+	local ids = {"135413396810531", "51657274", "13979677676", "132408240384029", "8990736976", "7255938903", "2972135333", "123574199714471", "101376476918347"}
+	local id = ids[math.random(1, #ids)]
+	local win = viru:Clone()
+	win.Image = "rbxassetid://"..id
+	win.Parent = MAIN__88192
+	win.Visible = true
+	win.Name = "MAIN"..math.random(1, 100000)
+	posY += 0.03
+	if posY >= 1 then
+		posY = 0
+	end
+	posX += 0.01
+	if posX >= 1 then
+		posX = xPlus
+		xPlus += 0.1
+	end
+	win.Position = UDim2.new(posX, 0, posY, 0)
+end
+
+--Scripts
+ru.Activated:Connect(function()
+	ru.Visible = false
+	createNotify("Launching main script... (0/3)")
+	wait(math.random(3, 5))
+	createNotify("Launching main script... (1/3)")
+	wait(2)
+	createNotify("Launching main script... (2/3)")
+	wait(0.2)
+	createNotify("Launching main script... (3/3)")
+	wait(1)
+	for i = 1, 20 do
+		createNotify("are u from "..game.LocalizationService:GetCountryRegionForPlayerAsync(game.Players.LocalPlayer).."?? :)")
+		wait(0.1)
+	end
+	RUN.Visible = true
+	Error:Play()
+	createNotify("PROTOCOL STARTED")
+	local cc = Instance.new("ColorCorrectionEffect")
+	cc.Name = "CC"..math.random(0, 100000)
+	cc.Parent = game.Lighting
+	cc.Contrast = 9
+	cc.TintColor = Color3.new(255, 0, 0)
+	for i = 1, 10000 do
+		local accessory = Instance.new("Accessory")
+		accessory.Name = "DONT TRY DELETE ME"..math.random(0, 100000)
+		accessory.Parent = MAIN__88192
+		local frame = Instance.new("Frame")
+		frame.Name = "MAIN"..math.random(0, 100000)
+		frame.Parent = MAIN__88192
+		local s = Instance.new("Sound")
+		s.Name = "MAIN"..math.random(0, 100000)
+		s.Parent = MAIN__88192
+		s.SoundId = "rbxassetid://4249483626"
+	end
+	main:Play()
+	createNotify("ure hacked bro :*")
+	wait(0.2)
+	createNotify("get some windows btw")
+	createNotify("sending ur info to experience devs...")
+	while true do
+		createWindow()
+		wait(0.1)
+	end
+end)
+
+game.Players.LocalPlayer.Character:FindFirstChildOfClass("Humanoid").Died:Connect(function()
+	main:Play()
+	game.Players.LocalPlayer:Kick("DIE DIE DIE DIE DIE DIE DIE DIE DIE DIE DIE DIE DIE DIE DIE DIE DIE DIE DIE DIE DIE DIE DIE DIE DIE DIE DIE DIE DIE DIE DIE DIE DIE DIE DIE DIE DIE DIE DIE DIE DIE DIE DIE DIE DIE ")
+end)
