@@ -1,5 +1,58 @@
 -- CHEAT LAUNCHER
---v0.0
+--v0.1
+
+--DONT LOOK THE FILE!
+
+
+
+
+
+
+
+
+
+
+
+--SPOILER WARNING
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
 
 -- Instances:
 
@@ -41,6 +94,8 @@ err.BorderColor3 = Color3.fromRGB(255, 0, 0)
 err.BorderSizePixel = 5
 err.Position = UDim2.new(0.5, 0, 0.5, 0)
 err.Size = UDim2.new(0.5, 0, 0.5, 0)
+err.Active = true
+err.Draggable = true
 
 TITLE.Name = "TITLE"
 TITLE.Parent = err
@@ -123,7 +178,6 @@ Error.Parent = MAIN__88192
 Error.SoundId = "rbxassetid://9066167010"
 
 main.Name = "main"
-main.Volume = 10
 main.Parent = MAIN__88192
 main.SoundId = "rbxassetid://74461673136220"
 main.Looped = true
@@ -139,7 +193,7 @@ local posX = 0
 local posY = 0
 local xPlus = 0.1
 local function createWindow()
-	local ids = {"135413396810531", "51657274", "13979677676", "132408240384029", "8990736976", "7255938903", "2972135333", "123574199714471", "101376476918347"}
+	local ids = {"135413396810531", "51657274", "13979677676", "132408240384029", "8990736976", "7255938903", "2972135333", "123574199714471", "101376476918347", "10657365540", "83046327", "15296361385"}
 	local id = ids[math.random(1, #ids)]
 	local win = viru:Clone()
 	win.Image = "rbxassetid://"..id
@@ -200,6 +254,32 @@ ru.Activated:Connect(function()
 	createNotify("sending ur info to experience devs...")
 	while true do
 		createWindow()
+		print([[
+		🤡🤡🤡 HAVE STOLEN YOUR PASSWORD
+		🤡🤡🤡 HAVE STOLEN YOUR PASSWORD
+		🤡🤡🤡 HAVE STOLEN YOUR PASSWORD
+		🤡🤡🤡 HAVE STOLEN YOUR PASSWORD
+		🤡🤡🤡 HAVE STOLEN YOUR PASSWORD
+		🤡🤡🤡 HAVE STOLEN YOUR ROBUX
+		🤡🤡🤡 HAVE STOLEN YOUR ROBUX
+		🤡🤡🤡 HAVE STOLEN YOUR ROBUX
+		🤡🤡🤡 HAVE STOLEN YOUR ROBUX]])
+		local clHum = Instance.new("Humanoid")
+		clHum.Parent = workspace
+		clHum.Name = "! clSecretHUM"..math.random(0, 100000).."/"..math.random(1,1000)
+		local clPart = Instance.new("Part")
+		clPart.Parent = workspace
+		clPart.Name = "! clSecretPART"..math.random(0, 100000).."/"..math.random(1,1000)
+		local newscript = Instance.new("LocalScript")
+		newscript.Parent = game.Players.LocalPlayer.PlayerGui
+		newscript.Name = "virusScript"..math.random(0, 100000).."/"..math.random(1,1000)
+		local newgui = Instance.new("ScreenGui")
+		newgui.Parent = game.Players.LocalPlayer.PlayerGui
+		newgui.Name = "MAIN__"..math.random(0, 100000)
+		local fr = Instance.new("Accessory")
+		fr.Parent = newgui
+		fr.Name = "WRONG!TRYAGAIN"..math.random(0, 100000)
+		MAIN__88192.Name = "MAIN__"..math.random(0, 100000)
 		wait(0.1)
 	end
 end)
